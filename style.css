@@ -1,0 +1,55 @@
+:root{
+  --bg:#0b0b10; --bg2:#121218; --card:#16161f; --gold:#d4af37; --gold2:#f1d27a;
+  --text:#f3ead2; --muted:#b9b3a4; --line:#2a2a35;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+a{color:var(--gold2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.site{position:sticky;top:0;z-index:50;background:rgba(11,11,16,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{display:flex;align-items:center;gap:12px;font-size:22px;letter-spacing:.5px;color:var(--text)}
+.logo:hover{text-decoration:none}
+.mh{width:44px;height:44px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:bold;font-size:17px;background:#000}
+.logo small{display:block;font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+nav.links{display:flex;gap:22px;flex-wrap:wrap}
+nav.links a{color:var(--text);font-size:15px}
+nav.links a:hover{color:var(--gold2);text-decoration:none}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#191405;padding:12px 26px;border-radius:30px;font-weight:bold;font-size:16px;border:0;cursor:pointer}
+.btn:hover{text-decoration:none;filter:brightness(1.07)}
+.btn.ghost{background:transparent;color:var(--gold2);border:1px solid var(--gold)}
+.hero{padding:84px 0 64px;text-align:center;background:radial-gradient(ellipse at 50% -10%,#2b2410 0%,var(--bg) 60%)}
+.hero h1{font-size:52px;line-height:1.15;color:var(--gold2);text-shadow:0 2px 24px rgba(212,175,55,.25)}
+.hero .tag{font-size:20px;color:var(--muted);max-width:720px;margin:18px auto 30px}
+.hero .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+section{padding:56px 0}
+h2.sec{font-size:34px;color:var(--gold2);margin-bottom:8px}
+p.lead{color:var(--muted);max-width:760px;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{color:var(--gold2);font-size:21px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+.card .meta{font-size:13px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.video{position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video.short{padding-top:177.78%;max-width:320px;margin:0 auto}
+.shorts-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+article.post{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+article.post h3{font-size:22px}
+article.post h3 a{color:var(--gold2)}
+article.post p{color:var(--muted);font-size:15px;margin-top:8px}
+.prose{max-width:780px}
+.prose h1{font-size:40px;color:var(--gold2);line-height:1.25;margin-bottom:10px}
+.prose h2{font-size:26px;color:var(--gold2);margin:30px 0 10px}
+.prose p{margin:12px 0;color:#e7dfca}
+.prose .meta{color:var(--muted);font-size:14px;margin-bottom:20px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:12px}
+.faq summary{cursor:pointer;color:var(--gold2);font-size:17px}
+.faq p{color:var(--muted);margin-top:8px;font-size:15px}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:14px;text-align:center}
+footer .fl{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold2);border-radius:20px;padding:3px 12px;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+#installBar{display:none;background:#1a1607;border-bottom:1px solid var(--gold);color:var(--text);text-align:center;padding:10px 16px;font-size:15px}
+@media(max-width:640px){.hero h1{font-size:36px}.nav{flex-direction:column;gap:10px}}

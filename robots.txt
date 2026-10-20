@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kawishkhan402-spec.github.io/mafia-hearts-kdrama/sitemap.xml
